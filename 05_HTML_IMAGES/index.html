@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Images</title>
+    <link rel="stylesheet" href="image.css">
+</head>
+<body>
+
+    <!-- width and height image attribute -->
+    <h1>Width and Height, or Style</h1>
+    <p> The width and height or using style attribute for the width and height are all valid in HTML.</p>
+    <p>However using the style attribute prevents styles sheets from changing the size of images:</p>
+
+
+    <h3>Width and Height without Style Attribute </h3>
+
+    <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+
+
+    <h3>Width and Height with Style Attribute </h3>
+
+    <img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+
+
+    <!-- image in another folder -->
+     <h3>Images in Another Folder and link images</h3>
+     <p>Having images in a sub-folder, you have to include the folder name </p>:
+
+
+    <img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+    <!-- image as a link -->
+    <h3>Image as a Link</h3>
+
+    <a href="default.asp">
+        <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;" title="smiley gif">
+    </a>
+    
+
+   <h3>Images in another Server or Website</h3>
+
+    <p> To use an image from another server or website, you have to include the full URL of the image:</p>
+
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" style="width:104px;height:142px;">
+
+
+    <!-- fig caption -->
+    <h3>Fig and Figcaption in Images</h3>
+     
+    <p> The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</p>
+    
+    <p> While the content of the <figure> element is related to the main flow, its position is independent of the main flow, and if removed it should not affect the flow of the document.</p>
+
+    
+    <figure>
+        <img src="img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228">
+        <figcaption>Fig.1 - A view of the pulpit rock in Norway.</figcaption>
+    </figure>
+
+    <!-- responsive image -->
+    <h3>Responsive Image</h3>
+
+    <p>Responsive images will automatically adjust to fit the size of the screen:</p>
+
+    <img src="img_chania.jpg" alt="Chania" style="width:100%;" title="beautiful landscape">
+
+    <h4>Why use the width percentage in a responsive image?</h4> 
+
+    <p> The width percentage is used to ensure that the image will scale up and down when the screen size changes.</p>
+
+    <p>The best practice is using max-width to 100%. This enables the image to scale down to be responsive but not scale up more than the original size</p>
+    
+    <img src="" alt="" style="max-width:100%; height:auto;">
+    
+    
+     <h2>Show Different Images Depending on Browser Width</h2>
+<p>Resize the browser width and the image will change at 600px and 1500px.</p>
+
+<picture>
+  <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+  <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+  <source srcset="flowers.jpg">
+  <img src="img_flowers.jpg" alt="Flowers" style="width:100%;">
+</picture>
+
+    <!-- background image -->
+    <h3>Image as a Background</h3>
+
+    <p> The background-image property sets one or more background images for an element. </p>
+
+    <p> The background of an element is the total size of the element, including padding and border (but not the margin).</p>
+
+    <p> By default, a background-image is placed at the top-left corner of an element, and repeated both vertically and horizontally.</p>
+
+    <p> Tip: The background of an element is the total size of the element, including padding and border (but not the margin).</p>
+
+    <p> Tip: Always set a background-color to be used if the image is unavailable.</p>
+
+    <div style="background-image: url('img_tree.png');">
+
+
+        <!--image button  -->
+
+    <h3>Image as a Button</h3>
+
+    <p> To use an image as a button, use the <button> tag:</p>
+
+    <button type="button" onclick="alert('Hello world!')">
+        <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+    </button>
+
+    <!-- image map -->
+
+    <h3>Image Map</h3>
+
+    <p>Image maps are used to define clickable regions on an image. </p>
+
+    <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+        <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+
+    </map>
+
+
+    <!-- image changes to browser width size -->
+    <h3>Image Map with Different Shapes</h3>
+
+    <p>Image maps can have three different shapes: </p>
+
+    <ul>
+        <li>rect - defines a rectangular region</li>
+        <li>circle - defines a circular region</li>
+        <li>poly - defines a polygonal region</li>
+
+    </ul>
+
+    <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+        <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+        <area shape="poly" coords="300,300,350,250,350,350,300,300" alt="Phone" href="phone.htm">
+
+    </map>
+
+    <!-- background image with css -->
+
+    <h2>Background Image with CSS</h2>
+
+    <p> The background-image property sets one or more background images for an element. </p>
+
+    <p> The background of an element is the total size of the element, including padding and border (but not the margin).</p>
+
+    <p>Let's add a background image to the body of this website using CSS External link</p>
+
+    <p>Set the background-size property to "cover" and the background image will cover the entire element, in this case the body element.</p>
+
+    <h3>Background No Repeat</h3>
+
+    <p>Avoid the image from being repeated by setting the background-repeat property to "no-repeat".
+        Set the background-attachment property to fixed, the background image will stay in place when you scroll up or down the page.
+    </p>
+    
+    
+    <h3>Background Stretch</h3>
+
+    <p>Set the background-size property to "100% 100%" and the background image will be 
+        stretched to cover the entire element, in this case the body element:</p>   
+
+
+
+</body>
+</html>
+
+
+
+
+
+HTML Links - Use an Image as a Link
+To use an image as a link, just put the <img> tag inside the <a> tag:
+
+Example
+<a href="default.asp">
+<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Links  | anchor tags attributes</title>
+</head>
+<body>
+
+    <section class="main__content">
+
+        <h1 class="main__content-text">HTML Links | Tags and Attributes</h1>
+
+    <div class="main__content-element">
+
+     <p> 
+        HTML attributes provide additional information about HTML elements. All HTML elements can have attributes.
+        HTML attributes are always included in the opening tag. Attributes usually come in name/value pairs like: name="value".
+        
+     </p>
+
+
+        <p class="main__content-text">The class attribute</p>
+
+        <div class="main__content-element">
+            <p id="idName">The ID Attribute</p>
+        </div>
+
+
+        <h3>The HTML anchor tag and href Attribute</h3>
+        <p>The <a> anchor tag defines a hyperlink. 
+            The href attribute specifies the URL of the page the link goes to:
+        </p>
+           
+
+        <ul>
+            <li><a href="https://example.com">This is a Google link</a></li>
+            <li><a href="#"></a>This is a dead link</li>
+        </ul>
+
+        <h2>Two Types of Links</h2>
+        
+        <h3>Relative Link</h3>
+
+        <p>A relative link is a link that points to a file or directory within your website. 
+            Relative links are used when linking to pages within your own website. 
+        </p>   
+        
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <a href="#services">Services</a> <br> <br>
+            <li><a href="#contact.html">Contact</a></li>
+        </ul>
+
+
+        <div>
+            <h4 id="home.html" >Home Page</h4>
+            <p>Welcome to the home page!</p>
+
+
+             <h3 id="services">Service Page</h3>
+            <p>Welcome to our Service Page!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Perspiciatis quaerat debitis assumenda nemo animi nobis vero illum ducimus, 
+                esse, provident sed, quas modi nihil ut asperiores dicta cum? Sequi, dolorem?
+                
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Suscipit dolores maxime dolor reiciendis magnam, natus nihil amet, voluptates aspernatur quod modi 
+                sapiente, atque veritatis odio nulla quis quas. Minus, sit.
+
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt est itaque delectus asperiores 
+                autem cupiditate error esse assumenda porro inventore neque, temporibus placeat deserunt praesentium alias 
+                voluptas possimus vel quasi.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Suscipit dolores maxime dolor reiciendis magnam, natus nihil amet, voluptates aspernatur quod modi 
+                sapiente, atque veritatis odio nulla quis quas. Minus, sit.
+
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt est itaque delectus asperiores 
+                autem cupiditate error esse assumenda porro inventore neque, temporibus placeat deserunt praesentium alias 
+                voluptas possimus vel quasi.
+            </p>
+            <h4 id="services">Service Page</h4>
+
+        </div>
+        
+        
+        <h3>Absolute Link</h3>
+
+        <p>An absolute link is a link that points to a specific URL. 
+            Absolute links are used when linking to pages outside your website. 
+        </p> 
+
+
+        <h3>The target Attribute in Links</h3>
+
+        <p>The target attribute specifies where to open the linked document. 
+            The target attribute can have one of the following values:
+        </p>
+
+
+        <ul>
+            <li>_blank attribute opens  the document in a new external window or tab</li>    
+            <li>_self attribute  opens the document in the same window/tab as it was clicked</li>
+            <li>_parent attribute opens the document in the parent frame</li>
+            <li>_top attribute opens the document in the full body of the window</li>
+        </ul>
+
+
+        <ul>
+            <li><a href="https://example.com" target="_blank" >This is a link</a></li>
+            <li><a href="https://example.com" target="_self" >This is a Google link</a></li>
+            <li><a href="#"></a>This is my  Website</li>
+            <li><a href=""></a></li>
+        </ul>  
+           
+
+
+        <h3>The src and alt Attributes in Images</h3>
+
+        <p>The <img> tag defines an image. The src attribute specifies the URL of the image, 
+            while the alt attribute provides alternative information for an image if a user cannot view it:
+        </p>
+        
+            <img src="image.jpg" alt="Image description">
+
+        <h3>Two ways to specify the URL in the src attribute:</h3>  
+        
+        <p>1. Absolute URL - Links to an external image that is hosted on another website.</p>
+
+        <img src="https://www.example.com/image.jpg" alt="Image description">
+
+
+        <p>2. Relative URL - Links to an image that is hosted on the same website.</p>
+
+        <img src="image.jpg" alt="Image description">
+
+        <!-- image width and height -->
+        <h3>The width and height Attributes in image</h3>   
+        
+        <p>The width and height attributes specify the width and height of an image. 
+            The width and height attributes are used to specify the width and height of an image in pixels.
+        </p>
+
+        <img src="image.jpg" alt="Image description" width="200" height="200">
+
+
+        <p>Specifying width and height with image placeholder.io</p>
+
+        <img src="https://via.placeholder.com/150" alt="Image description" width="150" height="150">
+
+        
+        <!-- title attributes on images -->
+        <h3>The title Attribute on image</h3>
+
+        <p>The title attribute specifies extra information about an element. 
+            The information is most often shown as a tooltip text when the mouse moves over the element:
+        </p>
+
+        <img src="image.jpg" alt="Image description" title="Image Title">
+
+        <!-- style attribute on images -->
+        <h3>The Style Attribute</h3>
+
+        <p>The style attribute specifies an inline style for an element. The style attribute will override any style set in the 
+            <p> tag or external style sheet. The style attribute can contain any CSS property.
+           You can use the style attribute to specify the font, color, and size of text.      
+        </p>
+        
+        <p style="color: blue; font-size: 20px;">This is a paragraph with a blue color and a font size of 20px.</p>
+
+        <!-- email link -->
+        <h3>Link to an Email Address</h3>
+
+        <p>To create an email link, use the mailto: scheme inside the href attribute:</p>
+
+        <a href="mailto:google@google.com">Send email</a>
+
+
+        <h3>Link to a Specific Part of a Page</h3>
+
+        <p>To link to a specific part of a page, you must give the part you want to link to an id attribute. 
+            Then you can create a link to that part of the page using the hash (#) followed by the id of the element you want to link to.
+        </p>
+
+        <a href="#idName">Link to ID</a>
+
+        <h3>Link to a Specific Part of Another Page</h3>
+
+        <p>To link to a specific part of another page, you can use the full URL of the page
+             followed by the hash (#) followed by the id of the element you want to link to.
+        </p>
+
+        <a href="https://example.com#idName">Link to ID</a>
+
+        <!-- link download -->
+        
+        <h3>File PDF Download Link</h3>
+
+        <p>To create a PDF download link, you can use the download attribute inside the <a> tag. 
+            The value of the download attribute will be the name of the file to be downloaded.
+        </p>
+
+        <a href="file.pdf" download>Download PDF</a>
+    </div>
+</section>
+    
+</body>
+</html>
